@@ -13,16 +13,18 @@ repositories {
 
 dependencies {
     compile(kotlin("stdlib-jdk8"))
-    implementation("org.apache.hadoop:hadoop-mapreduce:3.2.0")
-    implementation("org.apache.hadoop:hadoop-common:3.2.0")
-    implementation("org.apache.hadoop:hadoop-yarn:3.2.0")
-    compileOnly("org.apache.hadoop:hadoop-client:2.7.1")
-    // hadoop common for map/reduce task
-    compileOnly("org.apache.hadoop:hadoop-common:2.7.1")
 
-    testCompileOnly("org.apache.hadoop:hadoop-client:2.7.1")
+    implementation("org.apache.hadoop:hadoop-mapreduce-client-core:3.2.0")
+    implementation("org.apache.hadoop:hadoop-common:3.2.0")
+    implementation("org.apache.hadoop:hadoop-hdfs-client:3.2.0")
+    implementation("org.apache.hadoop:hadoop-yarn:3.2.0")
+    implementation("org.apache.hadoop:hadoop-yarn-client:3.2.0")
+    implementation("org.apache.hadoop:hadoop-yarn-api:3.2.0")
+    implementation("org.apache.hadoop:hadoop-mapreduce-client-jobclient:3.2.0")
+    implementation("org.apache.hadoop:hadoop-client:3.2.0")
     // hadoop common for map/reduce task
-    testCompileOnly("org.apache.hadoop:hadoop-common:2.7.1")
+    implementation("org.apache.hadoop:hadoop-common:3.2.0")
+
     testImplementation("junit:junit:4.12")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0")
 }

@@ -1,6 +1,9 @@
-1   Dave    Schoutens
-2   Josh    Kovach
-3   Michael Kolarik
-4   Jesse   Harrison
-5   Matthew Underhill
-6   Matt    Armond
+1,Dave,Schoutens
+2,Josh,Kovach
+3,Michael,Kolarik
+4,Jesse,Harrison
+5,Matthew,Underhill
+6,Matthew,Underhill
+7,Matt,Armond
+8,Michael,Kolarik
+9,Dave,Schoutens

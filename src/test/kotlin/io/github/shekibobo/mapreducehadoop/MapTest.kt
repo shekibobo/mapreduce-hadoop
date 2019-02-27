@@ -18,7 +18,7 @@ class MapTest {
     @Test
     fun map() {
         val inputKey = LongWritable(1L)
-        val inputValue = Text("1\\tJosh\\tKovach")
+        val inputValue = Text("1,Josh,Kovach")
 
         val outputKey = Text("Kovach")
         val outputValue = IntWritable(1)
