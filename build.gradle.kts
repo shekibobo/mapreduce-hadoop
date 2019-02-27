@@ -13,6 +13,8 @@ repositories {
 
 dependencies {
     compile(kotlin("stdlib-jdk8"))
+    implementation("org.apache.hadoop:hadoop-mapreduce:3.2.0")
+    implementation("org.apache.hadoop:hadoop-common:3.2.0")
 }
 
 tasks.withType<KotlinCompile> {
