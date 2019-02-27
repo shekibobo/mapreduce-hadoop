@@ -21,11 +21,13 @@ class ViewCount : Configured(), Tool {
             jobName = "viewCount"
             setJarByClass(ViewCount::class.java)
 
+            numReduceTasks = 2
             outputKeyClass = Text::class.java
             outputValueClass = IntWritable::class.java
 
             mapperClass = Map::class.java
             reducerClass = Reduce::class.java
+            combinerClass = Reduce::class.java
         }
 
         val inputFilePath = Path(args[0])
