@@ -1,6 +1,8 @@
-package io.github.shekibobo.mapreducehadoop
+package io.github.shekibobo.mapreducehadoop.userviews
 
 import com.nhaarman.mockitokotlin2.verify
+import com.nhaarman.mockitokotlin2.verifyNoMoreInteractions
+import io.github.shekibobo.mapreducehadoop.extensions.writable
 import org.apache.hadoop.io.IntWritable
 import org.apache.hadoop.io.Text
 import org.apache.hadoop.mapreduce.Reducer
@@ -17,10 +19,11 @@ class ReduceTest {
     @Test
     fun reduce() {
         val reducer = Reduce()
-        val inputKey = Text("Kovach")
-        val inputValues = listOf(1, 1, 1, 1, 1, 1, 1, 1).map(::IntWritable).toMutableList()
+        val inputKey = "kovach".writable
+        val inputValues = listOf(1, 1, 1, 1, 1, 1, 1, 1).map(Int::writable).toMutableList()
         reducer.reduce(inputKey, inputValues, context)
 
         verify(context).write(inputKey, IntWritable(inputValues.size))
+        verifyNoMoreInteractions(context)
     }
 }

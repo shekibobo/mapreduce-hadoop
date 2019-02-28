@@ -1,4 +1,4 @@
-package io.github.shekibobo.mapreducehadoop
+package io.github.shekibobo.mapreducehadoop.userviews
 
 import com.nhaarman.mockitokotlin2.verify
 import org.apache.hadoop.io.IntWritable

@@ -1,4 +1,4 @@
-package io.github.shekibobo.mapreducehadoop
+package io.github.shekibobo.mapreducehadoop.userviews
 
 import org.apache.hadoop.conf.Configured
 import org.apache.hadoop.fs.Path
