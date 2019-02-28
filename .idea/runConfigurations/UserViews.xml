@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Main" type="JetRunConfigurationType" factoryName="Kotlin">
+  <configuration default="false" name="UserViews" type="JetRunConfigurationType" factoryName="Kotlin">
     <module name="io.github.shekibobo.mapreducehadoop.main" />
     <option name="VM_PARAMETERS" value="" />
-    <option name="PROGRAM_PARAMETERS" value="src/main/resources/data/input/ src/main/resources/data/output/" />
+    <option name="PROGRAM_PARAMETERS" value="src/main/resources/userviews/input/ src/main/resources/userviews/output/" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
     <option name="ALTERNATIVE_JRE_PATH" />
     <option name="PASS_PARENT_ENVS" value="true" />
